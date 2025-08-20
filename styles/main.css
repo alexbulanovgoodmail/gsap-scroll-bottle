@@ -56,6 +56,7 @@ body {
   line-height: 1.4;
   background-color: var(--papaya-whip);
   color: var(--black);
+  overflow-x: hidden;
 }
 
 main {
@@ -145,6 +146,7 @@ main {
   align-items: center;
   justify-content: center;
   padding: 4px;
+  color: var(--black);
   background-color: transparent;
   cursor: pointer;
 }
@@ -597,6 +599,12 @@ main {
   padding: 8px;
   background-color: var(--papaya-whip);
   box-shadow: 4px 4px 0 var(--sienna);
+}
+
+@media screen and (min-width: 768px) {
+  .timeline-side picture {
+    align-self: center;
+  }
 }
 
 .sidebar {
