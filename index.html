@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Brief description of your website, what it offers, or its purpose."
+    />
+    <meta name="keywords" content="keyword1, keyword2, keyword3, keyword4" />
+    <title>Crimson Fermentation</title>
+
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link
+      rel="preload"
+      as="image"
+      href="./images/bottle.webp"
+      type="image/webp"
+    />
+    <link rel="preload" as="image" href="./images/bottle.png" />
+    <script src="scripts/app.js" type="module"></script>
+  </head>
+
+  <body>
+    <header class="header" style="--border-width: 100%">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header-logo">
+            <span>CraftEdge</span>
+          </div>
+          <div class="navigation-menu">
+            <button
+              class="navigation-toggle"
+              type="button"
+              aria-label="Toggle navigation"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M21 18H3v-2h18v2Zm0-5H3v-2h18v2Zm0-5H3V6h18v2Z"
+                />
+              </svg>
+            </button>
+            <nav class="main-navigation">
+              <ul class="main-navigation__items">
+                <li class="main-navigation__item">
+                  <a class="main-navigation__link" href="#!">Home</a>
+                </li>
+                <li class="main-navigation__item">
+                  <a class="main-navigation__link" href="#!">Features</a>
+                </li>
+                <li class="main-navigation__item">
+                  <a class="main-navigation__link" href="#!">Product</a>
+                </li>
+                <li class="main-navigation__item">
+                  <a class="main-navigation__link" href="#!">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <picture class="hero-bottle">
+        <source srcset="./images/bottle.webp" type="image/webp" />
+        <img
+          class="bottle"
+          src="./images/bottle.png"
+          alt="Crimson Fermentation Bottle"
+          fetchpriority="high"
+        />
+      </picture>
+
+      <section class="hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <picture>
+              <source srcset="./images/stamp.webp" type="image/webp" />
+              <img
+                class="stamp"
+                src="./images/stamp.png"
+                width="100"
+                height="100"
+                alt="Crimson Fermentation Stamp"
+              />
+            </picture>
+
+            <h1 class="hero-title">
+              <span>Crimson</span>
+              <span>Fermentation</span>
+            </h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro">
+        <div class="container">
+          <div class="intro__wrapper">
+            <div class="intro__left">
+              <div class="selection">
+                <p class="selection__subtitle">Our Selection</p>
+                <h2 class="selection__title">The Heritage Line</h2>
+
+                <p class="selection__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                  suscipit soluta tenetur voluptatibus libero dolorum.
+                </p>
+
+                <a href="#" class="btn">Explore All</a>
+              </div>
+            </div>
+            <div class="intro__right">
+              <div class="ingredients">
+                <h2 class="ingredients__title">Brewed With</h2>
+
+                <ul class="ingredients__items">
+                  <li class="ingredient">
+                    <div class="ingredient__qty">500ml</div>
+                    <div class="ingredient__description">
+                      <strong>Spring Water</strong>
+                      <p>Pure glacier-sourced for clarity and smoothness.</p>
+                    </div>
+                  </li>
+
+                  <li class="ingredient">
+                    <div class="ingredient__qty">250g</div>
+                    <div class="ingredient__description">
+                      <strong>Organic Barley</strong>
+                      <p>Locally malted for a rich, golden body.</p>
+                    </div>
+                  </li>
+
+                  <li class="ingredient">
+                    <div class="ingredient__qty">100g</div>
+                    <div class="ingredient__description">
+                      <strong>Wild Hops</strong>
+                      <p>Foraged from mountain slopes, slow-dried.</p>
+                    </div>
+                  </li>
+
+                  <li class="ingredient">
+                    <div class="ingredient__qty">50g</div>
+                    <div class="ingredient__description">
+                      <strong>Roasted Oak</strong>
+                      <p>Infused for warmth and oaky aroma.</p>
+                    </div>
+                  </li>
+
+                  <li class="ingredient">
+                    <div class="ingredient__qty">1%</div>
+                    <div class="ingredient__description">
+                      <strong>Natural Yeast</strong>
+                      <p>Wild fermented, slow-aged for balance.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="timeline">
+        <div class="container">
+          <h2 class="timeline__title">Our Timeline</h2>
+
+          <article class="timeline-entry">
+            <div class="timeline-side timeline-side--left">
+              <div class="timeline-side__date">1984</div>
+              <picture>
+                <source srcset="./images/first-batch.webp" type="image/webp" />
+                <img
+                  class="timeline-side__img"
+                  src="./images/first-batch.png"
+                  width="240"
+                  height="240"
+                  alt="Vintage Brewery Photo"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+
+            <div class="timeline-side timeline-side--right">
+              <h3 class="timeline-side__title">The First Batch</h3>
+              <p class="timeline-side__description">
+                Our journey began in a wooden barn nestled among oak trees. The
+                first batch was brewed with hand-milled barley and patience.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-entry">
+            <div class="timeline-side timeline-side--left">
+              <div class="timeline-side__date">1989</div>
+              <picture>
+                <source srcset="./images/first-batch.webp" type="image/webp" />
+                <img
+                  class="timeline-side__img"
+                  src="./images/first-batch.png"
+                  width="240"
+                  height="240"
+                  alt="Vintage Brewery Photo"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+
+            <div class="timeline-side timeline-side--right">
+              <h3 class="timeline-side__title">The Fire Oak Revival</h3>
+              <p class="timeline-side__description">
+                A lightning storm sparked a fire that nearly ended our legacy.
+                But from the ashes, we rebuilt — charred oak barrels, reclaimed
+                tools, and a vow to never compromise the craft.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <aside class="sidebar" style="--border-height: 100%">
+        <div class="socials">
+          <ul class="socials__items">
+            <li class="socials__item">
+              <a class="socials__link" href="#!" aria-label="Instagram">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <title>Instagram</title>
+                  <path
+                    fill="currentColor"
+                    d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#!" aria-label="LinkedIn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <title>LinkedIn</title>
+                  <path
+                    fill="currentColor"
+                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#!" aria-label="X (Twitter)">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <title>X (Twitter)</title>
+                  <path
+                    fill="currentColor"
+                    d="m17.687 3.063l-4.996 5.711l-4.32-5.711H2.112l7.477 9.776l-7.086 8.099h3.034l5.469-6.25l4.78 6.25h6.102l-7.794-10.304l6.625-7.571zm-1.064 16.06L5.654 4.782h1.803l10.846 14.34z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer-logo">
+            <span>CraftEdge</span>
+          </div>
+
+          <nav class="footer-navigation">
+            <ul class="footer-navigation__items">
+              <li class="footer-navigation__item">
+                <a class="footer-navigation__link" href="#!">About</a>
+              </li>
+              <li class="footer-navigation__item">
+                <a class="footer-navigation__link" href="#!">Careers</a>
+              </li>
+              <li class="footer-navigation__item">
+                <a class="footer-navigation__link" href="#!">Terms</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="footer-contact">
+            <ul class="footer-contact__items">
+              <li class="footer-contact__item">
+                <a class="footer-contact__link" href="#!">
+                  hello@craftedge.com
+                </a>
+              </li>
+              <li class="footer-contact__item">
+                <a class="footer-contact__link" href="#!">Instagram</a>
+              </li>
+              <li class="footer-contact__item">
+                <a class="footer-contact__link" href="#!">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
