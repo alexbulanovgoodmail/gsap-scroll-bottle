@@ -8,3 +8,15 @@ navigationToggle.addEventListener("click", () => {
     ? `${mainNavigation.scrollHeight}px`
     : `0px`;
 });
+
+/* плавный скролл  */
+window.gsap.registerPlugin(window.ScrollTrigger);
+
+const lenis = new window.Lenis();
+lenis.on("scroll", window.ScrollTrigger.update);
+
+window.gsap.ticker.add((time) => {
+  lenis.raf(time * 1000);
+});
+
+window.gsap.ticker.lagSmoothing(0);
